@@ -1,3 +1,9 @@
+@import '../../../../assets/styles/index.scss';
+
+$basePadding: 100px;
+$baseWith: 10%;
+
+
 @mixin background-size-cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -5,48 +11,112 @@
   background-size: cover;
 }
 
+@function calculate-padding($sum) {
+  @return $basePadding+$sum;
+}
+
 @function background-image($url) {
   @return url($url) no-repeat center center;
 }
 
 .section {
-  &__introduction {
-    padding-bottom: 15px;
 
-    .col-lg-7 {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
+  .flex {
+    &__row {
+      display: flex;
+      flex-direction: row;
     }
 
+    &__item {
+      &-1 {
+        width: $baseWith;
+      }
+
+      &-2 {
+        width: $baseWith*2;
+      }
+
+      &-3 {
+        width: $baseWith*3;
+      }
+
+      &-4 {
+        width: $baseWith*4;
+      }
+
+      &-5 {
+        width: $baseWith*5;
+      }
+
+      &-6 {
+        width: $baseWith*6;
+      }
+
+      &-7 {
+        width: $baseWith*7;
+      }
+
+      &-8 {
+        width: $baseWith*8;
+      }
+
+      &-9 {
+        width: $baseWith*9;
+      }
+
+      &-10 {
+        width: $baseWith*10;
+      }
+
+    }
   }
 
+
   &__misura {
-    padding-top: 250px;
-    padding-bottom: 400px;
+
+    .flex__row {
+      justify-content: space-around;
+    }
+
+    padding-top: $basePadding;
+    padding-bottom: $basePadding;
     background: background-image('/assets/images/bg_image2.png');
     @include background-size-cover;
   }
 
   &__piacevole {
-    padding-top: 200px;
-    padding-bottom: 300px;
+
+    .flex__row {
+      justify-content: flex-end;
+    }
+
+    padding-top: $basePadding;
+    padding-bottom: $basePadding;
     background: background-image('/assets/images/bg_image3.png');
     @include background-size-cover;
   }
 
   &__comfort {
-    padding-top: 300px;
-    padding-bottom: 320px;
+
+    .flex__row {
+      justify-content: flex-start;
+    }
+
+    padding-top: calculate-padding(100);
+    padding-bottom: calculate-padding(100);
     background: background-image('/assets/images/bg_image4.png');
     @include background-size-cover;
   }
 
   &__cambia {
-    padding-top: 300px;
-    padding-bottom: 400px;
+
+    .flex__row {
+      justify-content: space-evenly;
+    }
+
+    padding-top: calculate-padding(100);
+    padding-bottom: calculate-padding(200);
     background: background-image('/assets/images/bg_image5.png');
     @include background-size-cover;
   }
-
 }

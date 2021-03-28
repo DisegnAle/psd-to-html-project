@@ -2,13 +2,13 @@
 <section class="main">
   <app-header></app-header>
   <app-introduction (onOpenPanel)="openSidePanel()"></app-introduction>
-  <app-characteristics></app-characteristics>
+  <app-characteristics (onOpenPanel)="openSidePanel()"></app-characteristics>
   <app-specifications></app-specifications>
   <app-cart></app-cart>
   <app-footer></app-footer>
 </section>
 
 <!-- side panel -->
-<section *ngIf="isShowingSidePanel" class="side" [@slideInOut]>
+<section *ngIf="isShowingSidePanel" class="sidebar" [@slideInOut]>
   <app-side-panel (onClosePanel)="closeSidePanel()"></app-side-panel>
 </section>

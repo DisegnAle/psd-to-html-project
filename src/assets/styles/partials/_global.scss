@@ -3,83 +3,99 @@
     padding-top: 300px;
     padding-bottom: 300px;
   }
-  &-heading {
-    font-size: 42px;
+
+  &__heading {
+    font-size: 56px;
+    line-height: 0.982;
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  &-tagline {
-    font-size: 12px;
+
+  &__tagline {
+    font-size: 14px;
+    line-height: 4.714;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 0;
     margin-top: 15px;
   }
-  &-subheading {
-    font-size: 18px;
+
+  &__subheading {
+    line-height: 1.25;
+    font-size: 24px;
     font-weight: 500;
     margin-bottom: 20px;
   }
 }
 
-
-
-
-.link-styled {
-border-bottom: 2px solid $red;
+.link--styled {
+  border-bottom: 2px solid $red;
   color: $red;
-  &:hover{
+
+  &:hover {
     color: darken($red, 10%) !important;
     border-bottom-color: darken($red, 10%) !important;
   }
-  &.link-styled-dark {
-      color: #000000;
-      border-bottom-color: #000000;
+
+  &.link--styled-dark {
+    color: #000000;
+    border-bottom-color: #000000;
+  }
+}
+
+// utility
+.text {
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--thin {
+    font-weight: lighter;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--line-through {
+    text-decoration: line-through
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--primary {
+    color: $red;
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--light {
+    font-weight: 300;
+  }
+
+  &--normal {
+    font-weight: 400;
+  }
+
+  &--medium {
+    font-weight: 500;
   }
 }
 
 
 
-// utility
-.text-center {
-  text-align: center;
-}
-.text-primary{
-  color: $red;
-}
-.mx-auto {
+.mx--auto {
   margin-left: auto;
   margin-right: auto;
 }
-.ml-auto{
+
+.ml--auto {
   margin-left: auto;
-}
-.text-white {
-  color: #fff;
-}
-.line-through{
-  text-decoration: line-through;
-}
-.font-light{
-  font-weight: 300;
-}
-.font-normal {
-  font-weight: 400;
-}
-.font-medium {
-  font-weight: 500;
-}
-
-
-
-.btn-icon {
-  min-width: 150px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .fa {

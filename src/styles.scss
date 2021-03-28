@@ -5,10 +5,6 @@ html {
   scroll-behavior: smooth
 }
 
-.intro-hero {
-  padding-bottom: 15px;
-}
-
 .section {
   width: 100%;
   &-misura {
@@ -36,7 +32,7 @@ html {
     padding-bottom: 150px;
     background: #efefef;
 
-    .section-heading {
+    .section__heading {
       margin-bottom: 50px;
     }
   }
@@ -81,7 +77,7 @@ html {
     padding-bottom: 150px;
     background: #efefef;
 
-    .section-heading {
+    .section__heading {
       @media (min-width:992px) {
         margin-bottom: 50px;
       }

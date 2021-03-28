@@ -42,10 +42,15 @@
   }
 } */
 
-.intro-hero {
-  .col-lg-7 {
-    text-align: center;
-    margin-left:  auto;
-    margin-right: auto;
+.section {
+  &__introduction {
+    padding-bottom: 15px;
+
+    .col-lg-7 {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
   }
 }

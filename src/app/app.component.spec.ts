@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'psd-to-html2-project'`, () => {
+  it(`should have as title 'psd-to-html'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('psd-to-html2-project');
+    expect(app.title).toEqual('psd-to-html');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('psd-to-html2-project app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('psd-to-html app is running!');
   });
 });

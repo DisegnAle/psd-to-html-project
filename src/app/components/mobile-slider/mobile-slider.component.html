@@ -1,0 +1,5 @@
+<swiper [config]="swiperConfig">
+  <ng-template *ngFor="let slide of slides" swiperSlide>
+    <img [src]="slide.url" [alt]="'product_specification_'+slide.id">
+  </ng-template>
+</swiper>

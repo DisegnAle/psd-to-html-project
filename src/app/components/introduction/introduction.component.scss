@@ -1,0 +1,51 @@
+/* @mixin background-size-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@function background-image($url) {
+  @return url($url) no-repeat center center;
+}
+
+.section-one {
+  .section__sub {
+    min-height: 150vh;
+    width: 100%;
+    display: block;
+
+    &.bg__1 {
+      background: background-image('/assets/images/bg_image1.png');
+      @include background-size-cover;
+    }
+
+    &.bg__2 {
+      background: background-image('/assets/images/bg_image2.png');
+      @include background-size-cover;
+    }
+
+    &.bg__3 {
+      background: background-image('/assets/images/bg_image3.png');
+      @include background-size-cover;
+    }
+
+    &.bg__4 {
+      background: background-image('/assets/images/bg_image4.png');
+      @include background-size-cover;
+    }
+
+    &.bg__5 {
+      background: background-image('/assets/images/bg_image5.png');
+      @include background-size-cover;
+    }
+  }
+} */
+
+.intro-hero {
+  .col-lg-7 {
+    text-align: center;
+    margin-left:  auto;
+    margin-right: auto;
+  }
+}

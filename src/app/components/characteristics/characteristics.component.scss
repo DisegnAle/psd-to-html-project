@@ -1,1 +1,11 @@
+.section {
+  &__climate {
+    padding-top: 60px;
+    padding-bottom: 150px;
+    background: #efefef;
 
+    .section__heading {
+      margin-bottom: 50px;
+    }
+  }
+}

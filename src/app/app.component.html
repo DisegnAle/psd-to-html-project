@@ -1,3 +1,4 @@
+<!-- main -->
 <section class="main">
   <app-header></app-header>
   <app-introduction (onOpenPanel)="openSidePanel()"></app-introduction>
@@ -6,6 +7,8 @@
   <app-section-four></app-section-four>
   <app-footer></app-footer>
 </section>
+
+<!-- side panel -->
 <section *ngIf="isShowingSidePanel" class="side" [@slideInOut]>
   <app-side-panel (onClosePanel)="closeSidePanel()"></app-side-panel>
 </section>

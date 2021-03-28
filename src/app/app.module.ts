@@ -7,8 +7,8 @@ import { IntroductionComponent } from './components/introduction/introduction.co
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CharacteristicsComponent } from './components/characteristics/characteristics.component';
-import { SectionThreeComponent } from './components/section-three/section-three.component';
-import { SectionFourComponent } from './components/section-four/section-four.component';
+import { SpecificationsComponent } from './components/specifications/specifications.component';
+import { CartComponent } from './components/cart/cart.component';
 import { ChangeColorToHeaderDirective } from './directives/change-color-to-header.directive';
 import { SidePanelComponent } from './components/side-panel/side-panel.component';
 import { SwiperModule } from 'swiper/angular';
@@ -22,8 +22,8 @@ import { MobileSliderComponent } from './components/mobile-slider/mobile-slider.
     HeaderComponent,
     FooterComponent,
     CharacteristicsComponent,
-    SectionThreeComponent,
-    SectionFourComponent,
+    SpecificationsComponent,
+    CartComponent,
     ChangeColorToHeaderDirective,
     SidePanelComponent,
     MobileSliderComponent

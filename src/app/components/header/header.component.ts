@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
 
   scrollToElement(elementId: string): void {
     console.log(elementId);
+    this.viewPortScroller.setOffset([0, 100]);
     this.viewPortScroller.scrollToAnchor(elementId)
   }
 

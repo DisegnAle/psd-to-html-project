@@ -1,11 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24.06" height="24.062" viewBox="0 0 24.06 24.062">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #ed2b31;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Rettangolo_11" data-name="Rettangolo 11" class="cls-1" d="M4102.81,35.979l21.21,21.213-2.83,2.828-21.21-21.213Zm-2.8,21.189,21.16-21.158,2.82,2.821L4102.83,59.99Z" transform="translate(-4099.97 -35.969)"/>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="24.000000pt" height="24.000000pt" viewBox="0 0 24.000000 24.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,24.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M14 219 c-3 -6 13 -31 37 -55 l43 -44 -44 -45 c-34 -35 -41 -48 -32
+-57 9 -9 22 -2 57 32 l45 44 45 -44 c35 -34 48 -41 57 -32 9 9 2 22 -32 57
+l-44 45 44 45 c34 35 41 48 32 57 -9 9 -22 2 -57 -32 l-45 -44 -43 42 c-46 45
+-52 48 -63 31z"/>
+</g>
 </svg>

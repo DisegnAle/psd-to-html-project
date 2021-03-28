@@ -1,8 +1,6 @@
 @import '../../../../assets/styles/index.scss';
 
 $basePadding: 100px;
-$baseWith: 10%;
-
 
 @mixin background-size-cover {
   -webkit-background-size: cover;
@@ -21,63 +19,7 @@ $baseWith: 10%;
 
 .section {
 
-  .flex {
-    &__row {
-      display: flex;
-      flex-direction: row;
-    }
-
-    &__item {
-      &-1 {
-        width: $baseWith;
-      }
-
-      &-2 {
-        width: $baseWith*2;
-      }
-
-      &-3 {
-        width: $baseWith*3;
-      }
-
-      &-4 {
-        width: $baseWith*4;
-      }
-
-      &-5 {
-        width: $baseWith*5;
-      }
-
-      &-6 {
-        width: $baseWith*6;
-      }
-
-      &-7 {
-        width: $baseWith*7;
-      }
-
-      &-8 {
-        width: $baseWith*8;
-      }
-
-      &-9 {
-        width: $baseWith*9;
-      }
-
-      &-10 {
-        width: $baseWith*10;
-      }
-
-    }
-  }
-
-
   &__misura {
-
-    .flex__row {
-      justify-content: space-around;
-    }
-
     padding-top: $basePadding;
     padding-bottom: $basePadding;
     background: background-image('/assets/images/bg_image2.png');
@@ -85,11 +27,6 @@ $baseWith: 10%;
   }
 
   &__piacevole {
-
-    .flex__row {
-      justify-content: flex-end;
-    }
-
     padding-top: $basePadding;
     padding-bottom: $basePadding;
     background: background-image('/assets/images/bg_image3.png');
@@ -97,11 +34,6 @@ $baseWith: 10%;
   }
 
   &__comfort {
-
-    .flex__row {
-      justify-content: flex-start;
-    }
-
     padding-top: calculate-padding(100);
     padding-bottom: calculate-padding(100);
     background: background-image('/assets/images/bg_image4.png');
@@ -109,11 +41,6 @@ $baseWith: 10%;
   }
 
   &__cambia {
-
-    .flex__row {
-      justify-content: space-evenly;
-    }
-
     padding-top: calculate-padding(100);
     padding-bottom: calculate-padding(200);
     background: background-image('/assets/images/bg_image5.png');

@@ -12,9 +12,11 @@
   }
 }
 
+
+
 @media(max-width: 768px){
    .container__mobile-characteristics{
-     display: block;
+     display: flex;
    }
    .container__desktop-characteristics{
     display: none;
@@ -26,6 +28,6 @@
     display: none;
   }
   .container__desktop-characteristics{
-   display: block;
+   display: flex;
  }
 }

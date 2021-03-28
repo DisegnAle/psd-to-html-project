@@ -1,17 +1,17 @@
 <section class="section__climate" id="section-app">
   <div class="container">
 
-    <div class="row">
-      <div class="col-lg-7 mx--auto text--center">
+    <div class="flex__row">
+      <div class="flex__item-7 mx--auto text--center">
         <h2 class="section__heading">
           IL CLIMA PERFETTO SEMPRE SOTTO CONTROLLO
         </h2>
       </div>
     </div> <!-- END row -->
 
-    <div class="row container__desktop-characteristics">
+    <div class="flex__row flex__justifyAround container__desktop-characteristics">
 
-      <div class="col-lg-4">
+      <div class="flex__item-3">
         <div class="pro-xdr-item">
           <div class="pro-xdr-item__img">
             <img alt="" src="/assets/images/slider-product1.png">
@@ -28,13 +28,13 @@
             </p>
           </div>
           <div class="pro-xdr-item__action">
-            <a class="btn btn-outline-primary">portale Smart
-            365</a>
+            <a  (click)="openSidePanel()" class="btn btn-outline-primary">portale Smart
+              365</a>
           </div>
         </div><!-- END pro-xdr-item -->
-      </div><!-- END col-lg-4 -->
+      </div>
 
-      <div class="col-lg-4">
+      <div class="flex__item-3">
         <div class="pro-xdr-item">
           <div class="pro-xdr-item__img">
             <img alt="" src="/assets/images/slider-product2.png">
@@ -51,15 +51,19 @@
             </p>
           </div>
           <div class="pro-xdr-item__action">
-            <a class="btn btn-outline-primary btn--icon">iOS
-            <i aria-hidden="true" class="fa fa-apple"></i></a> <a class=
-            "btn btn-outline-primary btn--icon">Android
-            <i aria-hidden="true" class="fa fa-android"></i></a>
+            <a  (click)="openSidePanel()" class="btn btn-outline-primary btn--icon">
+              iOS
+              <img src="/assets/images/apple_icon.svg" alt="apple_icon">
+            </a>
+            <a  (click)="openSidePanel()" class="btn btn-outline-primary btn--icon">
+              Android
+              <img src="/assets/images/android_icon.svg" alt="android_icon">
+            </a>
           </div>
         </div><!-- END pro-xdr-item -->
-      </div><!-- END col-lg-4 -->
+      </div>
 
-      <div class="col-lg-4">
+      <div class="flex__item-3">
         <div class="pro-xdr-item">
           <div class="pro-xdr-item__img">
             <img alt="" src="/assets/images/slider-product3.png">
@@ -79,7 +83,7 @@
             <span class="link--styled" (click)="openSidePanel()">Gestione vocale</span>
           </div>
         </div><!-- END pro-xdr-item -->
-      </div><!-- END col-lg-4 -->
+      </div>
     </div><!-- END row -->
 
 

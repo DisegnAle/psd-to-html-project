@@ -6,5 +6,12 @@
       text-transform: uppercase;
       margin-bottom: 30px;
     }
+
+    .img {
+      &__map {
+        margin-top: -35px;
+        width: 85%;
+      }
+    }
   }
 }

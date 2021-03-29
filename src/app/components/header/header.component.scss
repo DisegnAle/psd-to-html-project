@@ -2,6 +2,9 @@
 
 .site {
   &-header {
+    @media(max-width: 767px){
+      min-height: 10vh;
+    }
     position: fixed;
     width: 100%;
     top: 0;
@@ -25,6 +28,9 @@
     }
 
     &__brand {
+      /* @media(min-width: 768px){
+        margin-left: 3%;
+      } */
 
       h1 {
         margin: 0;
@@ -44,6 +50,9 @@
     }
 
     &__navbar {
+      /* @media(min-width: 768px){
+        margin-left: 0;
+      } */
       margin-left: auto;
       display: flex;
       align-items: center;
@@ -71,14 +80,6 @@
           }
         }
       }
-    }
-  }
-}
-
-@media(max-width: 767px){
-  .site{
-    &-header{
-      min-height: 10vh;
     }
   }
 }

@@ -1,3 +1,4 @@
+@import '../../../../assets/styles/index.scss';
 .section {
   &__specifiche {
 
@@ -18,8 +19,30 @@
       }
     }
 
-    @media(min-width: 769px){
+    @media(min-width: 769px) {
       padding-top: 120px;
+    }
+
+    // specifiche
+    .specifiche-list {
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #dddddd;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 400;
+
+        >p {
+          margin-bottom: 0;
+        }
+
+        >span {
+          color: $red;
+          margin-left: 20px;
+          text-align: right;
+        }
+      }
     }
   }
 }

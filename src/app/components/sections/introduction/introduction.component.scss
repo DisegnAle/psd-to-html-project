@@ -14,10 +14,13 @@ $basePadding: 100px;
 }
 
 @function background-image($url) {
-  @return linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url($url) no-repeat center center;
+  @return url($url) no-repeat center center;
+}
+
+@function background-image-mobile($url) {
+  @return linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),
+  url($url) no-repeat center center;
 }
 
 .section {
@@ -27,22 +30,18 @@ $basePadding: 100px;
   }
 
   &__misura {
-    background: background-image('/assets/images/bg_image2.png');
     @include background-size-cover;
   }
 
   &__piacevole {
-    background: background-image('/assets/images/bg_image3.png');
     @include background-size-cover;
   }
 
   &__comfort {
-    background: background-image('/assets/images/bg_image4.png');
     @include background-size-cover;
   }
 
   &__cambia {
-    background: background-image('/assets/images/bg_image5.png');
     @include background-size-cover;
   }
 }
@@ -52,21 +51,52 @@ $basePadding: 100px;
     &__misura {
       padding-top: $basePadding;
       padding-bottom: $basePadding;
+      background: background-image('/assets/images/bg_image2.png');
     }
 
     &__piacevole {
       padding-top: $basePadding;
       padding-bottom: $basePadding;
+      background: background-image('/assets/images/bg_image3.png');
     }
 
     &__comfort {
       padding-top: calculate-padding(100);
       padding-bottom: calculate-padding(100);
+      background: background-image('/assets/images/bg_image4.png');
     }
 
     &__cambia {
       padding-top: calculate-padding(100);
       padding-bottom: calculate-padding(200);
+      background: background-image('/assets/images/bg_image5.png');
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .section {
+
+    color: $white;
+
+    &__misura {
+      background: background-image-mobile('/assets/images/bg_image2.png');
+      @include background-size-cover;
+    }
+
+    &__piacevole {
+      background: background-image-mobile('/assets/images/bg_image3.png');
+      @include background-size-cover;
+    }
+
+    &__comfort {
+      background: background-image-mobile('/assets/images/bg_image4.png');
+      @include background-size-cover;
+    }
+
+    &__cambia {
+      background: background-image-mobile('/assets/images/bg_image5.png');
+      @include background-size-cover;
     }
   }
 }

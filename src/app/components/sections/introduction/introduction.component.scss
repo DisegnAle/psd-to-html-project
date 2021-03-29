@@ -19,6 +19,10 @@ $basePadding: 100px;
 
 .section {
 
+  .flex__item{
+    padding: 0 5vh;
+  }
+
   &__misura {
     padding-top: $basePadding;
     padding-bottom: $basePadding;

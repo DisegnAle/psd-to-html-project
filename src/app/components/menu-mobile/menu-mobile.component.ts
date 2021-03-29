@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuMobileComponent implements OnInit {
 
-  constructor() { }
+  constructor(private viewPortScroller: ViewportScroller) { }
+  isShowingMenu: boolean = false;
 
   ngOnInit(): void {
+  }
+
+  toggleMenu(): void {
+    this.isShowingMenu = !this.isShowingMenu;
+  }
+
+  scrollToElement(elementId: string): void {
+    console.log(elementId);
+    this.viewPortScroller.setOffset([0, 100]);
+    this.viewPortScroller.scrollToAnchor(elementId)
   }
 
 }

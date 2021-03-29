@@ -1,5 +1,4 @@
 
-
 .section {
   &__climate {
     padding-top: 60px;
@@ -10,24 +9,4 @@
       margin-bottom: 50px;
     }
   }
-}
-
-
-
-@media(max-width: 768px){
-   .container__mobile-characteristics{
-     display: flex;
-   }
-   .container__desktop-characteristics{
-    display: none;
-  }
-}
-
-@media(min-width: 769px){
-  .container__mobile-characteristics{
-    display: none;
-  }
-  .container__desktop-characteristics{
-   display: flex;
- }
 }

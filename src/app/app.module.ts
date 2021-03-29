@@ -16,6 +16,16 @@ import { MobileSliderComponent } from './components/mobile-slider/mobile-slider.
 import { MenuMobileComponent } from './components/menu-mobile/menu-mobile.component';
 
 
+// import Swiper core and required modules
+import SwiperCore, {
+  Pagination,
+  A11y,
+} from 'swiper/core';
+
+// install Swiper modules
+SwiperCore.use([Pagination, A11y]);
+
+
 @NgModule({
   declarations: [
     AppComponent,

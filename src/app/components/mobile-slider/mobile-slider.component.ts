@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-mobile-slider',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MobileSliderComponent implements OnInit {
 
+  @Output() onOpenPanel: EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   swiperConfig = {
@@ -24,13 +25,11 @@ export class MobileSliderComponent implements OnInit {
     roundLengths: true
   }
 
-  slides = [
-    {id:1, url: '../../../assets/images/slider-product1.png'},
-    {id:2, url: '../../../assets/images/slider-product2.png'},
-    {id:3, url: '../../../assets/images/slider-product3.png'}
-  ]
-
   ngOnInit(): void {
+  }
+
+  openSidePanel(){
+    this.onOpenPanel.emit();
   }
 }
 

@@ -28,9 +28,6 @@
     }
 
     &__brand {
-      /* @media(min-width: 768px){
-        margin-left: 3%;
-      } */
 
       h1 {
         margin: 0;
@@ -50,9 +47,19 @@
     }
 
     &__navbar {
-      /* @media(min-width: 768px){
+      @media (min-width: 767px) and (max-width: 1199px){
         margin-left: 0;
-      } */
+          li{
+            &:first-child{
+              margin-left: 0;
+              a{
+                &:first-child{
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+      }
       margin-left: auto;
       display: flex;
       align-items: center;

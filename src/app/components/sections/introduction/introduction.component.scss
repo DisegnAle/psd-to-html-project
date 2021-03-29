@@ -19,35 +19,66 @@ $basePadding: 100px;
 
 .section {
 
-  .flex__item{
+  .flex__item {
     padding: 0 5vh;
   }
 
   &__misura {
-    padding-top: $basePadding;
-    padding-bottom: $basePadding;
     background: background-image('/assets/images/bg_image2.png');
     @include background-size-cover;
   }
 
   &__piacevole {
-    padding-top: $basePadding;
-    padding-bottom: $basePadding;
     background: background-image('/assets/images/bg_image3.png');
     @include background-size-cover;
   }
 
   &__comfort {
-    padding-top: calculate-padding(100);
-    padding-bottom: calculate-padding(100);
     background: background-image('/assets/images/bg_image4.png');
     @include background-size-cover;
   }
 
   &__cambia {
-    padding-top: calculate-padding(100);
-    padding-bottom: calculate-padding(200);
     background: background-image('/assets/images/bg_image5.png');
     @include background-size-cover;
+  }
+}
+
+/* @media(max-width: 767px) {
+  .section {
+    text-align: center;
+
+    img {
+      max-width: 60%;
+      margin-top: 2vh;
+    }
+
+    p {
+      margin: 4vh;
+    }
+  }
+} */
+
+@media(min-width: 768px) {
+  .section {
+    &__misura {
+      padding-top: $basePadding;
+      padding-bottom: $basePadding;
+    }
+
+    &__piacevole {
+      padding-top: $basePadding;
+      padding-bottom: $basePadding;
+    }
+
+    &__comfort {
+      padding-top: calculate-padding(100);
+      padding-bottom: calculate-padding(100);
+    }
+
+    &__cambia {
+      padding-top: calculate-padding(100);
+      padding-bottom: calculate-padding(200);
+    }
   }
 }

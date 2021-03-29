@@ -15,15 +15,36 @@ html {
   &__climate,
   &__specifiche,
   &__cart {
+
     @media (max-width:768px) {
-      padding-top: 120px !important;
-      padding-bottom: 120px !important;
-      background-position: right !important;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
-    @media (max-width:576px) {
-      padding-top: 60px !important;
-      padding-bottom: 60px !important;
+
+  }
+
+
+  &__misura,
+  &__piacevole,
+  &__comfort,
+  &__cambia,
+  &__climate,
+  &__cart {
+
+    @media (max-width:768px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+
+      img {
+        width: 60%;
+        margin-top: 2vh;
+      }
+
+      p {
+        margin: 4vh;
+      }
     }
   }
 
@@ -93,6 +114,7 @@ html {
     >span {
       color: $red;
       margin-left: 20px;
+      text-align: right;
     }
   }
 }

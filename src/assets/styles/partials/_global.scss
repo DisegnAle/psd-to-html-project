@@ -96,13 +96,13 @@
   margin-left: auto;
 }
 
-@media(min-width: 769px){
+@media(min-width: 768px){
   .hidden--desktop{
     display: none;
   }
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
   .hidden--mobile{
     display: none;
   }

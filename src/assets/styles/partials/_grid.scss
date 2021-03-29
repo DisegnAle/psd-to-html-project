@@ -248,7 +248,7 @@
   max-width: 100%;
 }
 
-
+/*
 
 @media (min-width: 576px) {
 
@@ -545,12 +545,163 @@
   }
 }
 
+*/
+
+
+@media (min-width: 576px) {
+
+  .flex{
+    &__item{
+      &-sm-1{
+        width: $baseWith*1;
+      }
+      &-sm-2{
+        width: $baseWith*2;
+      }
+      &-sm-3{
+        width: $baseWith*3;
+      }
+      &-sm-4{
+        width: $baseWith*4;
+      }
+      &-sm-5{
+        width: $baseWith*5;
+      }
+      &-sm-6{
+        width: $baseWith*6;
+      }
+      &-sm-7{
+        width: $baseWith*7;
+      }
+      &-sm-8{
+        width: $baseWith*8;
+      }
+      &-sm-9{
+        width: $baseWith*9;
+      }
+      &-sm-10{
+        width: $baseWith*10;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+  .flex{
+    &__item{
+      &-md-1{
+        width: $baseWith*1;
+      }
+      &-md-2{
+        width: $baseWith*2;
+      }
+      &-md-3{
+        width: $baseWith*3;
+      }
+      &-md-4{
+        width: $baseWith*4;
+      }
+      &-md-5{
+        width: $baseWith*5;
+      }
+      &-md-6{
+        width: $baseWith*6;
+      }
+      &-md-7{
+        width: $baseWith*7;
+      }
+      &-md-8{
+        width: $baseWith*8;
+      }
+      &-md-9{
+        width: $baseWith*9;
+      }
+      &-md-10{
+        width: $baseWith*10;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .flex{
+    &__item{
+      &-lg-1{
+        width: $baseWith*1;
+      }
+      &-lg-2{
+        width: $baseWith*2;
+      }
+      &-lg-3{
+        width: $baseWith*3;
+      }
+      &-lg-4{
+        width: $baseWith*4;
+      }
+      &-lg-5{
+        width: $baseWith*5;
+      }
+      &-lg-6{
+        width: $baseWith*6;
+      }
+      &-lg-7{
+        width: $baseWith*7;
+      }
+      &-lg-8{
+        width: $baseWith*8;
+      }
+      &-lg-9{
+        width: $baseWith*9;
+      }
+      &-lg-10{
+        width: $baseWith*10;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex{
+    &__item{
+      &-xl-1{
+        width: $baseWith*1;
+      }
+      &-xl-2{
+        width: $baseWith*2;
+      }
+      &-xl-3{
+        width: $baseWith*3;
+      }
+      &-xl-4{
+        width: $baseWith*4;
+      }
+      &-xl-5{
+        width: $baseWith*5;
+      }
+      &-xl-6{
+        width: $baseWith*6;
+      }
+      &-xl-7{
+        width: $baseWith*7;
+      }
+      &-xl-8{
+        width: $baseWith*8;
+      }
+      &-xl-9{
+        width: $baseWith*9;
+      }
+      &-xl-10{
+        width: $baseWith*10;
+      }
+    }
+  }
+}
 
 .flex {
 
   &__row {
     display: flex;
-    flex-direction: row;
   }
 
   &__justifyAround {
@@ -614,5 +765,21 @@
       width: $baseWith*10;
     }
 
+  }
+}
+
+@media(min-width: 768px){
+  .flex{
+    &__row{
+      flex-direction: row;
+    }
+  }
+}
+
+@media(max-width: 767px){
+  .flex{
+    &__row{
+      flex-direction: column;
+    }
   }
 }

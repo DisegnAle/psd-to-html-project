@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../src/assets/styles/index.scss';
 
+$icon_android_red_path: './assets/images/android_icon.svg';
+$icon_android_white_path: './assets/images/android_icon-white.png';
+$icon_apple_red_path: './assets/images/apple_icon.svg';
+$icon_apple_white_path: './assets/images/apple_icon-white.png';
+
 html {
   scroll-behavior: smooth
 }
@@ -124,16 +129,16 @@ html {
 
 .container {
   &__icon {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
 
     &-android {
-      background: url('./assets/images/android_icon.svg') no-repeat center center;
+      background: background-image($icon_android_red_path);
       background-size: 90%;
     }
 
     &-apple {
-      background: url('./assets/images/apple_icon.svg') no-repeat center center;
+      background: background-image($icon_apple_red_path);
       background-size: 90%;
     }
   }
@@ -144,11 +149,11 @@ html {
     .container {
       &__icon {
         &-android {
-          background: url('./assets/images/android_icon-white.png') no-repeat center center;
+          background: background-image($icon_android_white_path);
           background-size: 90%;
         }
         &-apple {
-          background: url('./assets/images/apple_icon-white.png') no-repeat center center;
+          background: background-image($icon_apple_white_path);
           background-size: 90%;
         }
       }

@@ -29,7 +29,7 @@ $basePadding: 100px;
   }
 }
 
-@media(min-width: 768px) {
+@media(min-width: 992px) {
   .section {
     &__misura {
       padding-top: $basePadding;
@@ -61,36 +61,67 @@ $basePadding: 100px;
   }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 991px) {
   .section {
 
+
+
     &__misura {
+
+      h6,
+      h2,
+      p {
+        color: $white;
+      }
+
       background: background-image-mobile('/assets/images/bg_image2.png');
       @include background-size-cover;
     }
 
     &__piacevole {
+
+      h6,
+      h2,
+      p {
+        color: $white;
+      }
+
       background: background-image-mobile('/assets/images/bg_image3.png');
       @include background-size-cover;
     }
 
     &__comfort {
+
+      h6,
+      h2,
+      p {
+        color: $white;
+      }
+
       background: background-image-mobile('/assets/images/bg_image4.png');
       @include background-size-cover;
     }
 
     &__cambia {
+
+      h6,
+      h2,
+      p {
+        color: $white;
+      }
+
       background: background-image-mobile('/assets/images/bg_image5.png');
       @include background-size-cover;
     }
   }
 }
 
-@media(min-width: 768px) and (max-width: 991px){
-  .section{
+@media(min-width: 768px) and (max-width: 991px) {
+  .section {
+
     &__cambia,
-    &__misura{
-      .container__img{
+    &__misura {
+      .container__img {
         padding-top: 20vh;
       }
     }

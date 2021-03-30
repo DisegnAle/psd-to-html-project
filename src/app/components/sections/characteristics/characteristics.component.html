@@ -9,7 +9,7 @@
       </div>
     </div> <!-- END row -->
 
-    <div class="flex__row flex__justifyAround hidden--mobile">
+    <div class="flex__row flex__justifyAround hide-on-laptop">
 
       <div class="flex__item-3">
         <div class="pro-xdr-item">
@@ -50,7 +50,7 @@
               ullamco laboris nisi ut aliquip ex
             </p>
           </div>
-          <div class="pro-xdr-item__action">
+          <div class="pro-xdr-item__action flex__row">
             <a  (click)="openSidePanel()" class="btn btn-outline-primary btn--icon">
               iOS
               <img src="/assets/images/apple_icon.svg" alt="apple_icon">
@@ -87,7 +87,7 @@
     </div><!-- END row -->
 
 
-    <div class="hidden--desktop">
+    <div class="show-on-laptop">
       <app-mobile-slider (onOpenPanel)="openSidePanel()"></app-mobile-slider>
     </div>
   </div> <!-- END container -->

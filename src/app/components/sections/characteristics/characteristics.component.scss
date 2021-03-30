@@ -1,4 +1,3 @@
-
 .section {
   &__climate {
     padding-top: 60px;
@@ -8,5 +7,26 @@
     .section__heading {
       margin-bottom: 50px;
     }
+  }
+}
+
+@media(max-width: 991px) {
+  .hide-on-laptop {
+    display: none;
+  }
+
+  .show-on-laptop {
+    display: block;
+  }
+}
+
+
+@media(min-width: 992px) {
+  .hide-on-laptop {
+    display: flex;
+  }
+
+  .show-on-laptop {
+    display: none;
   }
 }

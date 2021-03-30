@@ -122,9 +122,43 @@ html {
   }
 }
 
+.container {
+  &__icon {
+    width: 15px;
+    height: 15px;
 
-@media (min-width: 768px) and (max-width: 991px){
-  .spc-bottom-content{
+    &-android {
+      background: url('./assets/images/android_icon.svg') no-repeat center center;
+      background-size: 90%;
+    }
+
+    &-apple {
+      background: url('./assets/images/apple_icon.svg') no-repeat center center;
+      background-size: 90%;
+    }
+  }
+}
+
+.btn--icon {
+  &:hover {
+    .container {
+      &__icon {
+        &-android {
+          background: url('./assets/images/android_icon-white.png') no-repeat center center;
+          background-size: 90%;
+        }
+        &-apple {
+          background: url('./assets/images/apple_icon-white.png') no-repeat center center;
+          background-size: 90%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .spc-bottom-content {
     max-width: 100%;
   }
 }

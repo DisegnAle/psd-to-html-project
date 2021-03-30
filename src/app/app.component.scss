@@ -5,9 +5,20 @@
   right: 0;
   height: 100%;
   background: #fff;
-  width: 50vw;
   z-index: 9999;
   overflow-y: auto;
   border-left: 1px solid #dddddd;
+}
+
+@media(min-width: 320px){
+  .sidebar{
+    width: 50vw;
+  }
+}
+
+@media(min-width: 992px){
+  .sidebar{
+    width: 30vw;
+  }
 }
 

@@ -2,14 +2,9 @@
 .section {
   &__specifiche {
 
-
     h3 {
       text-transform: uppercase;
       margin-bottom: 30px;
-
-      @media(max-width:768px) {
-        text-align: center;
-      }
     }
 
     .img {

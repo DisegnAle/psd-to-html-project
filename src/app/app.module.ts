@@ -15,7 +15,6 @@ import { SwiperModule } from 'swiper/angular';
 import { MobileSliderComponent } from './components/mobile-slider/mobile-slider.component';
 import { MenuMobileComponent } from './components/menu-mobile/menu-mobile.component';
 
-
 // import Swiper core and required modules
 import SwiperCore, {
   Pagination,

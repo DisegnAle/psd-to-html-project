@@ -1,15 +1,12 @@
-@import '../src/assets/styles/index.scss';
+@import './shared/styles/index.scss';
 
-$icon_android_red_path: './assets/images/android_icon.svg';
-$icon_android_white_path: './assets/images/android_icon-white.png';
-$icon_apple_red_path: './assets/images/apple_icon.svg';
-$icon_apple_white_path: './assets/images/apple_icon-white.png';
-$icon_cart_red_path: './assets/images/cart_icon.png';
-$icon_cart_white_path: './assets/images/cart_icon-white.png';
+$icon_android_red_path: './assets/images/android.svg';
+$icon_android_white_path: './assets/images/android-white.png';
+$icon_apple_red_path: './assets/images/apple.svg';
+$icon_apple_white_path: './assets/images/apple-white.png';
+$icon_cart_red_path: './assets/images/cart.png';
+$icon_cart_white_path: './assets/images/cart-white.png';
 
-html {
-  scroll-behavior: smooth
-}
 
 .section {
   width: 100%;

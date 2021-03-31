@@ -13,7 +13,7 @@ $basePadding: 100px;
   .section {
     &__misura {
       padding-top: $basePadding;
-      padding-bottom: $basePadding;
+      padding-bottom: calculate-padding($basePadding, 100);
       background: background-image('/assets/images/bg_image2.png');
       @include background-size-cover;
     }
@@ -34,7 +34,7 @@ $basePadding: 100px;
 
     &__cambia {
       padding-top: calculate-padding($basePadding, 100);
-      padding-bottom: calculate-padding($basePadding, 200);
+      padding-bottom: calculate-padding($basePadding, 100);
       background: background-image('/assets/images/bg_image5.png');
       @include background-size-cover;
     }

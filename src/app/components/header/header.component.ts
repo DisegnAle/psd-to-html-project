@@ -1,4 +1,3 @@
-import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import smoothscroll from 'smoothscroll-polyfill';
 
@@ -9,7 +8,7 @@ import smoothscroll from 'smoothscroll-polyfill';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private viewPortScroller: ViewportScroller) {
+  constructor() {
     smoothscroll.polyfill();
   }
 
@@ -18,8 +17,6 @@ export class HeaderComponent implements OnInit {
 
   scrollToElement(elementId: string): void {
     console.log(elementId);
-    //this.viewPortScroller.setOffset([0, 100]);
-    //this.viewPortScroller.scrollToAnchor(elementId)
     document.getElementById(elementId).scrollIntoView({ behavior: 'smooth' });
   }
 

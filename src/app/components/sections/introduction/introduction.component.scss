@@ -2,7 +2,6 @@
 
 $basePadding: 100px;
 
-
 .section {
   .flex__item {
     padding: 0 5vh;
@@ -33,10 +32,17 @@ $basePadding: 100px;
     }
 
     &__cambia {
-      padding-top: calculate-padding($basePadding, 100);
-      padding-bottom: calculate-padding($basePadding, 100);
+      padding-top: $basePadding;
+      padding-bottom: $basePadding;
       background: background-image('/assets/images/bg_image5.png');
       @include background-size-cover;
+    }
+
+    &__cambia,
+    &__misura {
+      .container__img {
+        width: 80vh;
+      }
     }
   }
 }
@@ -110,17 +116,6 @@ $basePadding: 100px;
     &__misura {
       .container__img {
         padding-top: 20vh;
-      }
-    }
-  }
-}
-
-@media(min-width: 992px) {
-  .section {
-    &__cambia,
-    &__misura {
-      .container__img {
-        width: 80vh;
       }
     }
   }

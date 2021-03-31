@@ -28,7 +28,7 @@
             </p>
           </div>
           <div class="pro-xdr-item__action">
-            <a  (click)="openSidePanel()" class="btn btn-outline-primary">portale Smart
+            <a (click)="openSidePanel()" class="btn btn-outline-primary">portale Smart
               365</a>
           </div>
         </div><!-- END pro-xdr-item -->
@@ -50,15 +50,23 @@
               ullamco laboris nisi ut aliquip ex
             </p>
           </div>
-          <div class="pro-xdr-item__action flex__row">
-            <a  (click)="openSidePanel()" class="btn btn-outline-primary btn--icon">
-              iOS
-              <div class="container__icon container__icon-apple"></div>
-            </a>
-            <a  (click)="openSidePanel()" class="btn btn-outline-primary btn--icon">
-              Android
-              <div class="container__icon container__icon-android"></div>
-            </a>
+          <div class="pro-xdr-item__action flex__row flex__justifyEvenly">
+            <div>
+              <button (click)="openSidePanel()" class="btn btn-outline-primary btn--icon">
+                <div>
+                  iOS
+                </div>
+                <div class="container__icon container__icon-apple"></div>
+              </button>
+            </div>
+            <div>
+              <button (click)="openSidePanel()" class="btn btn-outline-primary btn--icon">
+                <div>
+                  Android
+                </div>
+                <div class="container__icon container__icon-android"></div>
+              </button>
+            </div>
           </div>
         </div><!-- END pro-xdr-item -->
       </div>
@@ -87,7 +95,7 @@
     </div><!-- END row -->
 
 
-    <div class="show-on-laptop">
+    <div class="show-on-laptop text--center">
       <app-mobile-slider (onOpenPanel)="openSidePanel()"></app-mobile-slider>
     </div>
   </div> <!-- END container -->

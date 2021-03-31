@@ -2,9 +2,6 @@
 
 .site {
   &-header {
-    @media(max-width: 767px){
-      min-height: 10vh;
-    }
     position: fixed;
     width: 100%;
     top: 0;

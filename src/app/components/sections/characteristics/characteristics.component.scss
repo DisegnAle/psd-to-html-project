@@ -9,24 +9,3 @@
     }
   }
 }
-
-@media(max-width: 991px) {
-  .hide-on-laptop {
-    display: none;
-  }
-
-  .show-on-laptop {
-    display: block;
-  }
-}
-
-
-@media(min-width: 992px) {
-  .hide-on-laptop {
-    display: flex;
-  }
-
-  .show-on-laptop {
-    display: none;
-  }
-}

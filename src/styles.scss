@@ -13,57 +13,12 @@ html {
 
 .section {
   width: 100%;
-
-  &__misura,
-  &__piacevole,
-  &__comfort,
-  &__cambia,
-  &__climate,
-  &__specifiche,
-  &__cart {
-
-    @media (max-width:768px) {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-
-  }
-
-
-  &__misura,
-  &__piacevole,
-  &__comfort,
-  &__cambia,
-  &__climate {
-
-    @media (max-width:768px) {
-      padding-top: 25px;
-      padding-bottom: 50px;
-
-
-      img {
-        width: 55%;
-        margin-top: 2vh;
-      }
-
-      p {
-        margin: 4vh;
-      }
-    }
-  }
-
 }
 
 // pro-xdr-item
 .pro-xdr-item {
   margin-top: 30px;
-
   &__img {
-    @media (min-width:992px) {
-      min-height: 280px;
-    }
-
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -112,17 +67,6 @@ html {
   >p {
     margin-top: 20px;
   }
-
-  @media (min-width:992px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    >p {
-      margin-bottom: 0;
-      margin-top: 0;
-    }
-  }
 }
 
 .container {
@@ -165,12 +109,5 @@ html {
         }
       }
     }
-  }
-}
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .spc-bottom-content {
-    max-width: 100%;
   }
 }

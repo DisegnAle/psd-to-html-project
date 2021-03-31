@@ -1,57 +1,205 @@
-@media(min-width: 320px){ // Phones
-  .text{
-    &--center-sm{
+@media(min-width: 320px) {
+
+  .text {
+    &--center-sm {
       text-align: center;
     }
-    &--left-sm{
+
+    &--left-sm {
       text-align: left;
     }
-    &--right-sm{
+
+    &--right-sm {
+      text-align: right;
+    }
+  }
+
+  .sidebar {
+    width: 60vw;
+  }
+
+  .section {
+    &__heading {
+      font-size: 35px;
+      margin-top: 5px;
+    }
+
+    &__tagline {
+      margin-top: 0;
+    }
+
+    &__subheading {
+      font-size: 20px;
+    }
+  }
+}
+
+@media(min-width: 480px) {
+  // Phones, iPads, Tablets
+
+}
+
+@media(min-width: 768px) {
+
+  // iPads, Tablets
+  .text {
+    &--center-md {
+      text-align: center;
+    }
+
+    &--left-md {
+      text-align: left;
+    }
+
+    &--right-md {
+      text-align: right;
+    }
+  }
+
+  .sidebar {
+    width: 40vw;
+  }
+
+  .section {
+    &__specifiche {
+      padding-top: 120px;
+    }
+
+    &__heading {
+      font-size: 50px;
+      margin-top: 20px;
+    }
+
+    &__tagline {
+      margin-top: 15px;
+    }
+
+    &__subheading {
+      font-size: 24px;
+    }
+  }
+
+  .hidden--desktop {
+    display: none;
+  }
+}
+
+@media(min-width: 992px) {
+  .pro-xdr-item {
+    &__img {
+      min-height: 280px;
+    }
+  }
+
+  .spc-bottom-link-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >p {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  .sidebar {
+    width: 30vw;
+  }
+
+  .hide-on-laptop {
+    display: flex;
+  }
+
+  .show-on-laptop {
+    display: none;
+  }
+}
+
+@media(min-width: 1024px) {
+  // Small screens, laptops
+
+}
+
+@media(min-width: 1200px) {
+
+  // Desktops, large screens
+  .text {
+    &--center-lg {
+      text-align: center;
+    }
+
+    &--left-lg {
+      text-align: left;
+    }
+
+    &--right-lg {
       text-align: right;
     }
   }
 }
 
-@media(min-width: 480px){ // Phones, iPads, Tablets
+@media(max-width: 767px) {
+  .section {
 
-}
+    &__misura,
+    &__piacevole,
+    &__comfort,
+    &__cambia,
+    &__climate,
+    &__specifiche,
+    &__cart {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
 
-@media(min-width: 768px){ // iPads, Tablets
-  .text{
-    &--center-md{
-      text-align: center;
+    &__misura,
+    &__piacevole,
+    &__comfort,
+    &__cambia,
+    &__climate {
+      padding-top: 25px;
+      padding-bottom: 50px;
+
+      img {
+        width: 55%;
+        margin-top: 2vh;
+      }
+
+      p {
+        margin: 4vh;
+      }
     }
-    &--left-md{
-      text-align: left;
+
+    &__download {
+      .specifiche__heading {
+        margin-top: 30px;
+      }
     }
-    &--right-md{
-      text-align: right;
+  }
+
+  .site {
+    &-header {
+      min-height: 10vh;
     }
+  }
+
+  .hidden--mobile {
+    display: none;
   }
 }
 
-@media(min-width: 1024px){ // Small screens, laptops
+@media(max-width: 991px) {
+  .hide-on-laptop {
+    display: none;
+  }
 
-}
-
-@media(min-width: 1200px){ // Desktops, large screens
-  .text{
-    &--center-lg{
-      text-align: center;
-    }
-    &--left-lg{
-      text-align: left;
-    }
-    &--right-lg{
-      text-align: right;
-    }
+  .show-on-laptop {
+    display: block;
   }
 }
 
-
-
-
-
-@media(max-width: 767px){
-
+@media (min-width: 768px) and (max-width: 991px) {
+  .spc-bottom-content {
+    max-width: 100%;
+  }
 }

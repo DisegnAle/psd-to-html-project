@@ -1,8 +1,8 @@
 <!-- main -->
 <section class="main">
   <app-header></app-header>
-  <app-introduction (onOpenPanel)="openSidePanel()"></app-introduction>
-  <app-characteristics (onOpenPanel)="openSidePanel()"></app-characteristics>
+  <app-introduction (openingPanel)="openSidePanel()"></app-introduction>
+  <app-characteristics (openingPanel)="openSidePanel()"></app-characteristics>
   <app-specifications></app-specifications>
   <app-cart></app-cart>
   <app-footer></app-footer>
@@ -10,7 +10,7 @@
 
 <!-- side panel -->
 <section *ngIf="isShowingSidePanel" class="sidebar" [@slideInOut]>
-  <app-side-panel (onClosePanel)="closeSidePanel()"></app-side-panel>
+  <app-side-panel (closingPanel)="closeSidePanel()"></app-side-panel>
 </section>
 
 <!-- menu-mobile -->

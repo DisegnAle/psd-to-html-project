@@ -7,7 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class MobileSliderComponent implements OnInit {
 
-  @Output() onOpenPanel: EventEmitter<any> = new EventEmitter();
+  @Output() openingPanel: EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   swiperConfig = {
@@ -23,13 +23,13 @@ export class MobileSliderComponent implements OnInit {
     centeredSlides: true,
     loop: true,
     roundLengths: true
-  }
+  };
 
   ngOnInit(): void {
   }
 
-  openSidePanel(){
-    this.onOpenPanel.emit();
+  openSidePanel(): void {
+    this.openingPanel.emit();
   }
 }
 

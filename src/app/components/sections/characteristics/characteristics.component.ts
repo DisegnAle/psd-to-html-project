@@ -7,14 +7,14 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class CharacteristicsComponent implements OnInit {
 
-  @Output() onOpenPanel: EventEmitter<any> = new EventEmitter();
+  @Output() openingPanel: EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  openSidePanel() {
-    this.onOpenPanel.emit();
+  openSidePanel(): void {
+    this.openingPanel.emit();
   }
 
 }

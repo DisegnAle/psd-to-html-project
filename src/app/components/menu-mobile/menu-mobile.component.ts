@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class MenuMobileComponent implements OnInit {
 
   constructor(private viewPortScroller: ViewportScroller) { }
-  isShowingMenu: boolean = false;
+  isShowingMenu = false;
 
   ngOnInit(): void {
   }
@@ -21,7 +21,7 @@ export class MenuMobileComponent implements OnInit {
   scrollToElement(elementId: string): void {
     console.log(elementId);
     this.viewPortScroller.setOffset([0, 100]);
-    this.viewPortScroller.scrollToAnchor(elementId)
+    this.viewPortScroller.scrollToAnchor(elementId);
   }
 
 }

@@ -7,13 +7,13 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class SidePanelComponent implements OnInit {
 
-  @Output() onClosePanel: EventEmitter<any> = new EventEmitter();
+  @Output() closingPanel: EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
   }
-  closePanel(){
-    this.onClosePanel.emit();
+  closePanel(): void {
+    this.closingPanel.emit();
   }
 
 }

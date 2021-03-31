@@ -8,24 +8,24 @@ import { Component } from '@angular/core';
   animations: [
     trigger('slideInOut', [
       transition(':enter', [
-        style({transform: 'translateX(100%)'}),
-        animate('0.5s ease-in', style({transform: 'translateX(0%)'}))
+        style({ transform: 'translateX(100%)' }),
+        animate('0.5s ease-in', style({ transform: 'translateX(0%)' }))
       ]),
       transition(':leave', [
-        animate('0.5s ease-in', style({transform: 'translateX(100%)'}))
+        animate('0.5s ease-in', style({ transform: 'translateX(100%)' }))
       ])
     ])
   ]
 })
 export class AppComponent {
-  title: string = 'psd-to-html';
-  isShowingSidePanel: boolean = false;
+  title = 'psd-to-html';
+  isShowingSidePanel = false;
 
-  closeSidePanel(){
+  closeSidePanel(): void {
     this.isShowingSidePanel = false;
   }
 
-  openSidePanel(){
+  openSidePanel(): void {
     this.isShowingSidePanel = true;
   }
 }
